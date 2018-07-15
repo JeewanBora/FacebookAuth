@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/linear"
+    tools:context="com.example.hp_pc.facebookauth.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:fontFamily="cursive"/>
+
+    <TextView android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/demo_app"
+        android:layout_below="@id/txt_1"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:fontFamily="cursive"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="60dp"
+            />
+
+
+</RelativeLayout>
